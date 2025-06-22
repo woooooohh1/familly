@@ -1,0 +1,47 @@
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+
+/* 헤더 전체 가운데 정렬 */
+.table th {
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 데이터 셀 스타일 */
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left; /* 기본 정렬은 왼쪽 */
+}
+
+/* No 열 - 가운데 정렬 */
+.table td:nth-child(1) {
+  text-align: center;
+}
+
+/* 금액 열 - 오른쪽 정렬 */
+.table td:nth-child(3) {
+  text-align: right;
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+  .table th, .table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .table {
+    min-width: unset;
+  }
+}

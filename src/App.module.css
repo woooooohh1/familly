@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filterButton {
+  background: #eee;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover {
+  background-color: #ddd;
+}
+
+.active {
+  background-color: #0077ff;
+  color: white;
+}
+
+.total {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
